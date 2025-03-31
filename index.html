@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Summit Web Solutions</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        .hero-section {
+            background-image: url('websiteheroimage.png'); /* Replace with your image path */
+            background-size: cover; /* Makes the image cover the entire div */
+            background-position: center; /* Centers the image */
+            background-repeat: no-repeat; /* Prevents tiling */
+            height: 650px;
+            display: flex;
+            align-items: center; /* Centers text vertically */
+            justify-content: center; /* Centers text horizontally */
+            color: white; /* Text color (optional) */
+            text-align: center;
+        }
+        /*.navbar-line {
+            width: 75%; /* Set the width of the line */
+            /*height: 2px; /* Line thickness */
+            /*background-color: white; /* Color of the line */
+           /* margin: 0 auto; /* Center the line */
+        /*}*/
+        .navbar::after {
+            content: "";
+            position: absolute;
+            bottom: 0; /* Position the line at the bottom of the navbar */
+            left: 50%; /* Position the line in the middle */
+            transform: translateX(-50%); /* Offset by 50% of its width to center it */
+            width: 90%; /* Set the width of the line */
+            height: 2px; /* Line thickness */
+            background-color: white; /* Color of the line */
+        }
+        h1 {
+            font-size: 2.5em; /* 40px/16=2.5em */
+        }
+        .container {
+            display: flex;
+            flex-direction: column; /* Stack sections vertically */
+            justify-content: center;
+        }
+        .section {
+            flex: 1; /* Sections will take equal space */
+            /* Add other styles as needed */
+        }
+        .column {
+            float: left;
+            width: 50%;
+        }
+
+        /* Clear floats after the columns */
+        .row:after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+        .services-container {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around; /* Distributes items with equal space around */
+            align-items: center; /* Centers them vertically */
+            text-align: center;
+            padding: 20px;
+        }
+
+        .service {
+            flex: 1; /* Each service takes up equal width */
+            max-width: 300px; /* Optional: Limit width if needed */
+            color: white;
+        }
+</style>
+
+</head>
+<body>
+    <!-- Navigation Bar --> 
+    <div class="hero-section">
+    </div>
+    <div class="row">
+        <div class="column" style = "text-align: right; padding: 5%;"><h3>Check out our work > </h3></div>
+        <div class="column" style = "text-align: left; padding: 5%;"><h5>Summit Web Solutions is an innovative, results oriented website devloper headquartered in Boulder Colorado</h6></div>
+    </div>
+
+    <!-- Services Section -->
+    <section id="services" style="background-color: #031f3f;">
+        <div class="container">
+            <h2 style = "color: white; text-align: center;">What We Do</h2>
+            <div class="services-container">
+                <div class="service">Retained Services</div>
+                <div class="service">UX/UI Design</div>
+                <div class="service">Technical Strategy & Development</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-5 text-center">
+        <div class="container">
+            <h2>Get in Touch</h2>
+            <p>Email us at <a href="mailto:info@summitweb.com">info@summitweb.com</a></p>
+            <p>Call us at 601-342-7671</p>
+        </div>
+    </section>
+
+    <footer class="text-center py-3 bg-dark text-light">
+        <p>&copy; 2025 • Summit Web Solutions • All Rights Reserved</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
+
